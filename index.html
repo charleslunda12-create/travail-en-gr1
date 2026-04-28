@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AFRI NAIROBI BUS</title>
+    <link rel="shortcut icon" href="../images/afri narirobi bus.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- nav -->
+    
+    <div class="nav">
+        <img src="images/afri narirobi bus.png" alt="">
+        <a href="" class="text">Buses</a>
+        <a href="/pages/about us.html" class="text">About us</a>
+        <a href="/pages/contact us.html" class="text">contact us</a>
+        <a href="/pages/help.html" class="text">Help</a>
+        <ul class="ul">
+                <div class="refer"><li><a href="/pages/refer.html" >Refer & Earn</a></li></div>
+                <li><a href="/pages/account.html">Manage my account</a></li>
+                
+        </ul>
+
+    </div>
+    <div class="slider">
+        <img src="images/afri narirobi bus.png" alt="" class="img1"> 
+    </div>
+    <!-- search container -->
+    
+    
+    <div class="destination">
+    <div class="search-container">
+
+    <!-- FROM -->
+    <div class="field">
+        <input type="text" id="fromInput" placeholder="From" readonly onclick="toggleList('fromList')">
+        <ul id="fromList" class="dropdown"></ul>
+    </div>
+
+    <!-- TO -->
+    <div class="field">
+        <input type="text" id="toInput" placeholder="To" readonly onclick="toggleList('toList')">
+        <ul id="toList" class="dropdown"></ul>
+    </div>
+
+    <!-- DATE -->
+    <input type="date" id="dateInput">
+    <input type="date" id="dateInput">
+    <input type="number" id="passengers" placeholder="Passengers" value="1" min="1">
+
+    <button onclick="searchRoute()">SEARCH</button>
+
+</div>
+
+<p id="result"></p>
+</div>
+
+<!-- banner -->
+<div class="banner11">
+    <div class="banner-box1">
+        <img src="images/payments.webp" alt="" class="img12">
+        <h3 class="textbx12">Flexible payments
+Pay with M-pesa, credit cards or bank transfers. We have you fully covered.</h3>
+    </div>
+     <div class="banner-box1">
+        <img src="images/support.webp" alt="" class="img12">
+        <h3 class="textbx12">Great customer care
+Get excellent customer service available 8:00 AM to 10:00 PM, via phone, chat or email.</h3>
+    </div>
+     <div class="banner-box1">
+        <img src="images/convenience.webp" alt="" class="img12">
+        <h3 class="textbx12">Enjoy convenience
+Book anytime from the convenience of your office, home, school, or market.</h3>
+    </div>
+</div>
+<!-- banner theme -->
+ 
+<div class="banner-theme">
+    <div class="banner-theme1">
+        <h1>Our Partners</h1>
+        <p>These bus operators trust us. <br>
+We sell their tickets all in one place.</p>
+    </div>
+     <div class="banner-theme2">
+        <div class="imgg">
+            <img src="images/abandu.webp" alt="" class="img-theme">
+
+        </div>
+        <div class="imgg">
+            <img src="images/abuya.webp" alt="" class="img-theme">
+
+        </div>
+        <div class="imgg">
+            <img src="images/ambasaliner.webp" alt="" class="img-theme">
+
+        </div>
+        <div class="imgg">
+            <img src="images/baretum.webp" alt="" class="img-theme">
+
+        </div>
+        <div class="imgg">
+            <img src="images/coolcars.webp" alt="" class="img-theme">
+
+        </div>
+        <div class="imgg">
+            <img src="images/darexpress.webp" alt="" class="img-theme">
+
+        </div>
+        
+    </div>
+    <div class="banner-theme2">
+        <div class="imgg">
+            <img src="images/decent_travel.webp" alt="" class="img-theme">
+
+        </div>
+        <div class="imgg">
+            <img src="images/easycoach.webp" alt="" class="img-theme">
+
+        </div>
+        <div class="imgg">
+            <img src="images/fillers.webp" alt="" class="img-theme">
+
+        </div>
+        <div class="imgg">
+            <img src="images/greenline.webp" alt="" class="img-theme">
+
+        </div>
+        <div class="imgg">
+            <img src="images/decent_travel.webp" alt="" class="img-theme">
+
+        </div>
+        <div class="imgg">
+            <img src="images/impala.webp" alt="" class="img-theme">
+
+        </div>
+        
+    </div>
+    <div class="banner-theme2">
+        <div class="imgg">
+            <img src="images/lodwar.webp" alt="" class="img-theme">
+
+        </div>
+        <div class="imgg">
+            <img src="images/lolwe.webp" alt="" class="img-theme">
+
+        </div>
+        <div class="imgg">
+            <img src="images/periska.webp" alt="" class="img-theme">
+
+        </div>
+        <div class="imgg">
+            <img src="images/pride.webp" alt="" class="img-theme">
+
+        </div>
+        <div class="imgg">
+            <img src="images/tcb.webp" alt="" class="img-theme">
+
+        </div>
+        <div class="imgg">
+            <img src="images/teamswat.webp" alt="" class="img-theme">
+
+        </div>
+        
+    </div>
+</div>
+<!-- banner theme destination -->
+<div class="banner-theme">
+    <div class="banner-theme1">
+        <h1>Top Destinations</h1>
+        <p>These destinations are popular among travelers like you</p>
+    </div>
+  <div class="banner11">
+    <div class="banner-destination">
+        <a href="#"><h2>?NAIROBI - KISUMU</h2></a>
+    </div>
+     <div class="banner-destination1">
+         
+            <a href="#"><h2>NAIROBI - MOMBASA</h2></a>
+            
+
+        
+    </div>
+     <div class="banner-destination2">
+        <a href="#"><h2>Nairobi - Bungoma</h2></a>
+     </div>
+        
+  </div>
+   <div class="banner19">
+    <div class="banner-destination3">
+        
+    </div>
+     <div class="banner-destination1">
+
+        
+    </div>
+     <div class="banner-destination2">
+     </div>
+        
+  </div>
+</div>
+<!-- customer  -->
+ <div class="customer">
+    <div class="customer-box1">
+        <div class="customer-box11">
+           <h4 class="text-costomer">Customers</h4><br>
+           <h1>2.5M+</h1><br>
+           <P>Total customers</P>
+
+        </div>
+        
+
+    </div>
+    <div class="customer-box1">
+        <div class="customer-box11">
+           <h4 class="text-costomer">Buses</h4><br>
+           <h1>1250+</h1><br>
+           <P>Total buses in operations</P>
+
+        </div>
+        
+        
+
+    </div>
+    <div class="customer-box1">
+        <div class="customer-box11">
+           <h4 class="text-costomer">Routes</h4><br>
+           <h1>800+</h1><br>
+           <P>Total routes covered</P>
+
+        </div>
+        
+
+    </div>
+    <div class="customer-box1">
+        <div class="customer-box11">
+           <h4 class="text-costomer">Tickets</h4><br>
+           <h1>9M+</h1><br>
+           <P>Bus tickets sold</P>
+
+        </div>
+        
+
+    </div>
+ </div>
+ <!-- container -->
+  <div class="container">
+    <div class="container-boximg">
+        <img src="images/afr phone.png" alt="" class="mobile">  
+    </div>
+    <div class="container-boxtext">
+        <div class="container-boxtext1">
+            <h2>Download our app</h2>
+            <p>Book and manage your trips on the go. Be notified of our hot deals and offers.</p>
+        </div>
+        <div class="container-boxtext2">
+            <button class="btnnn"><img src="/images/Screenshot 2026-04-22 103248.png" alt=""></button>
+        </div>
+        
+    </div>
+  </div>
+  <!-- sidebar -->
+  <div class="container-sidebar">
+    <div class="sidebar">
+        <img src="images/afri narirobi bus.png" alt="" class="logo">
+        <div class="sidebar-icon">
+                <a href=""><img src="/icon/facebook.png" alt="" class="icon"></a>
+                <a href=""><img src="/icon/instagram.png" alt="" class="icon"></a>
+                <a href=""><img src="/icon/whatsapp.png" alt="" class="icon"></a>
+        </div>
+    </div>
+    
+    <div class="sidebar-box">
+        <div class="sidebar-box1">
+            <h3>THE COMPANY</h3><br>
+            <a href=""><h3>About the company</h3></a>
+            <a href=""><h3>Contact us</h3></a>
+            
+            <a href=""><h3>Terms and conditions</h3></a>
+            <a href=""><h3>Privacy policy</h3></a>
+            <a href=""><h3>Blog</h3></a>
+
+        </div>
+        <div class="sidebar-box1">
+             <h3>TOP ROUTES</h3><br>
+            <a href="#"><h3>Nairobi - Kitale</h3></a>
+            <a href="#"><h3>Nairobi - Malaba</h3></a>
+            <a href="#"><h3>Nairobi - Bungoma</h3></a>
+            <a href="#"><h3>Nairobi - Eldoreit</h3></a>
+            <a href="#"><h3>Nairobi - Mombasa</h3></a>
+            <a href="#"><h3>Nairobi - Busia</h3></a>
+            <a href="#"><h3>Nairobi - kisumu</h3></a>
+           
+        </div>
+        
+        <div class="sidebar-box1">
+            <h3>OUR PRODUCTS</h3><br>
+            <a href="#"><h3>BMS</h3></a>
+            <a href="#"><h3>Parcel</h3></a>
+           
+
+        </div>
+        <div class="sidebar-box1">
+            <img src="images/afrisoft.png" alt="" class="afri-logo">
+        </div>
+    </div>
+
+  </div>
+  
+  <script src="function.js"></script>
+    
+</body>
+</html>
