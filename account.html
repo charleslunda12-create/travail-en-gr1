@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Account - Afri Nairobi Bus</title>
+    <link rel="stylesheet" href="/pages/account.css">
+</head>
+<body>
+    <div class="nav">
+        <img src="/images/afri narirobi bus.png" alt="">
+        <a href="/index.html" class="text">Buses</a>
+        <a href="/pages/about us.html" class="text">About us</a>
+        <a href="/pages/contact us.html" class="text">Contact us</a>
+        <a href="/pages/help.html" class="text">Help</a>
+        <ul class="ul">
+                <div class="refer"><li><a href="/pages/refer.html" >Refer & Earn</a></li></div>
+                <li><a href="/pages/account.html">Manage my account</a></li>
+                
+        </ul>
+
+    </div> 
+
+    <!-- HEADER -->
+    <header class="header">
+        <h1>My Account</h1>
+        
+    </header>
+
+    <div class="container">
+
+        <!-- SIDEBAR -->
+        <aside class="sidebar">
+            <ul>
+                <li onclick="showSection('profile')">Profile</li>
+                <li onclick="showSection('bookings')">My Bookings</li>
+                <li onclick="showSection('settings')">Settings</li>
+                <li onclick="logout()">Logout</li>
+            </ul>
+        </aside>
+
+        <!-- CONTENT -->
+        <main class="content">
+
+            <!-- PROFILE -->
+            <section id="profile" class="section">
+                <h2>Profile</h2>
+                <p><strong>Name:</strong> <span id="userName">Charles</span></p>
+                <p><strong>Email:</strong> <span id="userEmail">user@email.com</span></p>
+            </section>
+
+            <!-- BOOKINGS -->
+            <section id="bookings" class="section hidden">
+                <h2>My Bookings</h2>
+                <div id="bookingList"></div>
+            </section>
+
+            <!-- SETTINGS -->
+            <section id="settings" class="section hidden">
+                <h2>Edit Profile</h2>
+
+                <input type="text" id="newName" placeholder="New Name">
+                <input type="email" id="newEmail" placeholder="New Email">
+                <button onclick="saveProfile()">Save Changes</button>
+            </section>
+
+        </main>
+
+    </div>
+     <!-- sidebar container -->
+ <div class="container-sidebar">
+    <div class="sidebar">
+        <img src="/images/afri narirobi bus.png" alt="" class="logo">
+        <div class="sidebar-icon">
+                <a href=""><img src="/icon/facebook.png" alt="" class="icon"></a>
+                <a href=""><img src="/icon/instagram.png" alt="" class="icon"></a>
+                <a href=""><img src="/icon/whatsapp.png" alt="" class="icon"></a>
+        </div>
+    </div>
+    
+    <div class="sidebar-box">
+        <div class="sidebar-box1">
+            <h3>THE COMPANY</h3><br>
+            <a href="/pages/about us.html"><h3>About the company</h3></a>
+            <a href="/pages/contact us.html"><h3>Contact us</h3></a>
+            
+            <a href=""><h3>Terms and conditions</h3></a>
+            <a href=""><h3>Privacy policy</h3></a>
+            <a href=""><h3>Blog</h3></a>
+
+        </div>
+        <div class="sidebar-box1">
+             <h3>TOP ROUTES</h3><br>
+            <a href="#"><h3>Nairobi - Kitale</h3></a>
+            <a href="#"><h3>Nairobi - Malaba</h3></a>
+            <a href="#"><h3>Nairobi - Bungoma</h3></a>
+           
+        </div>
+        <div class="sidebar-box1">
+            <h3>OUR PRODUCTS</h3><br>
+            <a href="#"><h3>BMS</h3></a>
+            <a href="#"><h3>Parcel</h3></a>
+           
+
+        </div>
+    </div>
+
+  </div>
+
+    <script src="/pages/account.js"></script>
+</body>
+</html>
